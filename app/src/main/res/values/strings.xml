@@ -10,4 +10,17 @@
     <string name="welcome_to">Bienvenido a</string>
     <string name="comenzar">Comenzar</string>
     <string name="cavosh">Cavosh</string>
+    <string name="lets_get_you_signed_in">!Vamos a iniciar sesión!</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="registrar">Registrar</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">¿Olvidó su contraseña?</string>
+    <string name="login">Ingresar</string>
+    <string name="or_login_with">O iniciar sesión con</string>
+    <string name="iniciar_sesion_google">Iniciar sesión google</string>
+    <string name="iniciar_sesion_facebook">Iniciar sesión facebook</string>
+    <string name="iniciar_sesion_apple">Iniciar sesión apple</string>
+    <string name="already_have_an_account">¿Ya tienes una cuenta?</string>
+    <string name="register_now">Regístrate Ahora</string>
 </resources>
