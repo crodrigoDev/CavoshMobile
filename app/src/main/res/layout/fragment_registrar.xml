@@ -63,7 +63,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnTabLogin"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
+                android:layout_height="64dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -79,7 +79,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnTabRegistrar"
                 android:layout_width="0dp"
-                android:layout_height="56dp"
+                android:layout_height="64dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
