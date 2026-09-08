@@ -23,4 +23,9 @@
     <string name="iniciar_sesion_apple">Iniciar sesión apple</string>
     <string name="already_have_an_account">¿Ya tienes una cuenta?</string>
     <string name="register_now">Regístrate Ahora</string>
+    <string name="full_name">Nombre Completo</string>
+    <string name="password_confirm">Confirmar Contraseña</string>
+    <string name="lets_get_you_registered">!Vamos a registrarte!</string>
+    <string name="or_register_with">O regístrate con</string>
+    <string name="login_now">Inicia Sesión Ahora</string>
 </resources>
