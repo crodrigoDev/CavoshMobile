@@ -1,14 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
     tools:context=".ui.inicio.InicioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        >
 
-</FrameLayout>
+        <View
+            android:id="@+id/vHeader"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/sh_bg_police_blue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="250dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginTop="-48dp"
+            android:alpha="0.5"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_granos_cafe"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/cavosh"
+            android:fontFamily="@font/rokkitt_medium"
+            android:textSize="24sp"
+            android:textColor="@color/carmine_pink"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvBuenosDias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/buenos_dias"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textColor="@color/flesh"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:id="@+id/tvTuCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/your_cafe"
+            android:textSize="16sp"
+            android:textColor="@color/flesh"
+            app:layout_constraintTop_toBottomOf="@id/tvBuenosDias"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/tu_cafe_ubicacion"
+            android:textColor="@color/flesh"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvBuenosDias"
+            app:layout_constraintStart_toEndOf="@id/tvTuCafe"
+            />
+
+        <ImageButton
+            android:id="@+id/btnNotificacion"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/campana_notificacion"
+            android:src="@drawable/ic_campana"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/cambiar"
+            android:textColor="@color/flesh"
+            app:layout_constraintTop_toBottomOf="@id/btnNotificacion"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingVertical="0dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="64dp"
+            app:layout_constraintWidth_max="400dp"
+            android:background="@drawable/sh_input_bright_gray"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="@string/buscar"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            app:layout_constraintTop_toBottomOf="@id/vHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/vHeader"
+            />
+        
+        <ImageButton
+            android:id="@+id/btnBuscar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/sh_btn_search"
+            android:contentDescription="@string/boton_buscar"
+            android:src="@drawable/ic_buscar"
+            app:layout_constraintTop_toTopOf="@id/etBuscar"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:id="@+id/tvNuevos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/nuevos_en"
+            app:layout_constraintTop_toBottomOf="@id/etBuscar"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNuevos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tvNuevos"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+        <TextView
+            android:id="@+id/tvFrecuentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/frecuentemente_ordenados"
+            app:layout_constraintTop_toBottomOf="@id/rvNuevos"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrecuentes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFrecuentes"
+            app:layout_constraintStart_toStartOf="@id/etBuscar"
+            app:layout_constraintEnd_toEndOf="@id/etBuscar"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
